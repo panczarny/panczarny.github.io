@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+markdown {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+markdown textarea, markdown preview {
+  padding: 10px 20px;
+  width: 50%;
+  outline: none;
+}
+markdown textarea {
+  border: 2px solid transparent;
+  background-color: #666;
+  color: #ddd;
+}
+markdown textarea:focus {
+  border-color: #7786ff;
+}
+markdown preview {
+  background-color: #fff;
+  color: #333;
+}
+markdown preview .bold {
+  font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+  markdown {
+    flex-direction: column;
+  }
+  markdown textarea, markdown preview {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.download {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+.download button {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 20px 10px;
+  border: 0;
+  border-radius: 50%;
+  background: url("../images/download_button.png") center center no-repeat;
+  background-size: 100%;
+  transition: transform 0.1s ease-in-out;
+}
+.download button:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */
