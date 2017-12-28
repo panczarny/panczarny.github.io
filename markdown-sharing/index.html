@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Markdown</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <markdown>
+      <textarea>Wymagania:
+* edycja tekstu w polu powoduje automatyczne renderowanie obok
+* obsługa **przynajmniej** podstawowych elementów języka markdown takich jak:
+* **pogrubienie**
+* _kursywa_
+* [odnośnik](http://typeofweb.com/)
+* #### Nagłówki
+* tekst powinien się automatycznie zapisywać w przeglądarce
+* edytor powinien być funkcjonalny również na urządzeniach mobilnych
+Technologia:
+* dowolna ze wskazaniem na czysty JS
+* dodatkowe utrudnienie: Spróbować zaimplementować obsługę Markdowna samemu bez gotowych bibliotek (nieobowiązkowo)</textarea>
+      <preview></preview>
+    </markdown>
+    <div class="download">
+      <button class="md"></button>
+      <button class="share"></button>
+      <button class="html"></button>
+    </div>
+    <script type="text/javascript" src="js/backendless.min.js"></script>
+    <script type="text/javascript" src="js/tingle.min.js"></script>
+    <script type="text/javascript" src="js/Downloader.js"></script>
+    <script type="text/javascript" src="js/Markdown.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
